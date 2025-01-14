@@ -86,12 +86,12 @@ code .
 ```
 
 ### 3. Develop the Application
-- Follow the file structure
+- Follow the file structure and create and modify below files.
 - Modify the `App.jsx`
 - Create the `TaskForm.jsx`
 - Create the `TaskList.jsx`
 - Create the `TaskItem.jsx`
-- Open `src/index.css` and add some basic styles:
+- Open `src/index.css` and add some basic styles.
 
 ### 4. Run the Application
 - Start the development server:
@@ -113,6 +113,7 @@ npm run dev
 - The task appears in the list below, with two buttons:
   - **Complete**: Marks the task as completed.
   - **Delete**: Removes the task from the list.
+- If you click "Add Task" without typing anything, nothing happens because of validation in the `TaskForm` component.
 ![Screenshot 2025-01-15 035825](https://github.com/user-attachments/assets/0dc900dc-9d35-43dd-bafe-5679ffec338d)
 
 ### 3. After Marking a Task as Complete
