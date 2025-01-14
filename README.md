@@ -64,6 +64,7 @@ npm -v
 sudo npm install -g n
 sudo n stable
 ```
+![Screenshot 2025-01-15 034830](https://github.com/user-attachments/assets/b15a0d55-b1a3-4ec8-857a-97805530b4cd)
 
 ### 2. Set Up Your React Project
 - Create a new React application using Vite, a faster alternative to Create React App:
@@ -71,11 +72,13 @@ sudo n stable
 npm create vite@latest task-manager -- --template react
 cd task-manager
 ```
+![Screenshot 2025-01-15 034943](https://github.com/user-attachments/assets/a846f130-7d39-4277-a268-df6d204092ff)
 
 - Install dependencies:
 ```
 npm install
 ```
+![Screenshot 2025-01-15 035058](https://github.com/user-attachments/assets/b40247e0-c55b-4f06-ae87-219f665baf10)
 
 - Open the project in your preferred text editor, e.g., Visual Studio Code:
 ```
@@ -95,15 +98,35 @@ code .
 ```
 npm run dev
 ```
+![Screenshot 2025-01-15 035727](https://github.com/user-attachments/assets/4fa40ccf-17fd-4de2-bc7a-a3fa3bf9d897)
+
 - Open your browser and navigate to `http://localhost:5173`.
 
 ## Screenshots
 
 ### 1. Initial View
 - The user sees the app title, an input field, and a button to add tasks.
+![Screenshot 2025-01-15 035745](https://github.com/user-attachments/assets/b8f7b4e1-0d71-46e1-a5b5-d59c80ca9c81)
 
-### 2. Adding and Completing Tasks
-- Tasks are displayed in a list with options to complete or delete them.
+
+### 2. After Adding Tasks
+- The task appears in the list below, with two buttons:
+  - **Complete**: Marks the task as completed.
+  - **Delete**: Removes the task from the list.
+![Screenshot 2025-01-15 035825](https://github.com/user-attachments/assets/0dc900dc-9d35-43dd-bafe-5679ffec338d)
+
+### 3. After Marking a Task as Complete
+- The task text will be styled with a strikethrough to indicate completion (e.g., Complete React project).
+- The button text changes to "Undo". Clicking "Undo" will remove the strikethrough and revert the task to its incomplete state.
+![Screenshot 2025-01-15 035849](https://github.com/user-attachments/assets/ec3b3c06-30e4-42cd-8fd1-00204e6a6fc7)
+![Screenshot 2025-01-15 040012](https://github.com/user-attachments/assets/69c659ae-b9a2-4a1c-8ab9-f95e0bada953)
+
+
+
+### 4. After Deleting a Task
+- The task is removed from the list immediately.
+![Screenshot 2025-01-15 040031](https://github.com/user-attachments/assets/5654355f-c0be-4478-9848-750ede1d18d8)
+
 
 ## Project Structure
 ```
