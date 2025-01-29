@@ -2,8 +2,34 @@
 
 A simple and intuitive Task Manager application built with React. This app allows users to create, view, mark tasks as complete/incomplete, and delete tasks. It demonstrates a strong understanding of React concepts such as component composition, state management, and event handling.
 
-## Features
+## Overview
+<img width="1180" alt="Screenshot 2025-01-29 at 2 31 51 pm" src="https://github.com/user-attachments/assets/17a3d3fc-1c17-43b6-b213-e142b58dcef0" />
 
+### Explanation:
+#### 1. App.jsx (Main Application)
+- Holds the state (`tasks` array).
+- Handles adding, deleting, and completing tasks.
+- Passes tasks to `TaskList` and `TaskForm`.
+
+#### 2. TaskForm.jsx
+- Contains an input field and a submit button.
+- Calls `addTask` function in `App.jsx` when a new task is added.
+
+#### 3. TaskList.jsx
+- Receives `tasks` from `App.jsx` and renders each one using `TaskItem.jsx`.
+
+#### 4. TaskItem.jsx
+- Displays a single task with "Complete" and "Delete" buttons.
+- Calls functions to toggle completion status and delete a task.
+
+### Data Flows:
+1. User enters a task → `TaskForm.jsx` calls `addTask()`.
+2. `addTask()` updates the state in App.jsx.
+3. Updated state is passed to `TaskList.jsx`, which re-renders the task list.
+4. Each task is displayed using `TaskItem.jsx`.
+5. Clicking "Complete" or "Delete" triggers state updates in `App.jsx`, and the UI updates accordingly.
+
+## Features
 - **Add Tasks**: Create new tasks using a simple form.
 - **View Tasks**: Display a list of tasks with their current status.
 - **Mark as Complete**: Toggle tasks between completed and incomplete states with visual strikethrough.
